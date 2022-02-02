@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Gotham Pro", sans-serif;
+}
+
+.top_block {
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(16px);
+    height: 80px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.subscribe_title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin: 68px 0 42px 0;
+}
+
+.subscribe_item {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 16px rgba(14, 0, 45, 0.08);
+    border-radius: 10px;
+    padding: 24px 0;
+    margin: 0 auto 16px;
+    max-width: 784px;
+    width: 100%;
+}
+
+.subscribe_item:last-child {
+    margin-bottom: 52px;
+}
+
+.subscribe_subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145%;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 0 0 32px 0;
+}
+
+.subscribe_image {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0 0 32px 0;
+}
+
+.subscribe_text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #333333;
+    padding: 0 0 24px 0;
+    text-align: center;
+    max-width: 656px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.subscribe_text_bright {
+    color: #F06697;
+    padding: 0 0 10px 0;
+}
+
+.subscribe_text_dark {
+    color: #000000;
+    padding: 0;
+}
+
+.subscribe_text_light {
+    color: #B9B9B9;
+    padding: 0;
+}
+
+.subscribe_timer {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.subscribe_timer_item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 18px;
+    position: relative;
+}
+
+.subscribe_timer_item:last-child {
+    margin-right: 18px;
+}
+
+.subscribe_timer_number {
+    width: 54px;
+    height: 54px;
+    background: linear-gradient(180deg, #F5F5F5 0%, rgba(237, 237, 237, 0.18) 100%);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #F06697;
+    position: relative;
+}
+
+.subscribe_timer_item:after {
+    content: ':';
+    position: absolute;
+    top: 15px;
+    right: -9px;
+    width: 2px;
+    height: 8px;
+    color: #000000;
+    border-radius: 50%;
+}
+
+.subscribe_timer_item:last-child:after {
+    content: none;
+}
+
+.subscribe_timer_text {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #B9B9B9;
+    padding: 8px 0 0 0;
+}
+
+.subscribe_button {
+    background: #F06697;
+    box-shadow: 0px 6px 22px rgba(240, 102, 151, 0.3);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    outline: 0;
+    border: none;
+    padding: 15px 46px;
+    margin: 0 auto;
+}
+
+.subscribe_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.subscribe_btn_continue {
+    background: #F2F2F2;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    padding: 15px 25px;
+    outline: 0;
+    border: none;
+    margin-right: 8px;
+    min-width: 160px;
+    cursor: pointer;
+}
+
+.subscribe_btn_continue:last-child {
+    margin-right: 0;
+}
+
+.active {
+    background: #F06697;
+    box-shadow: 0px 6px 22px rgba(240, 102, 151, 0.3);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 425px) {
+
+    .subscribe_title {
+        font-size: 22px;
+        line-height: 36px;
+        margin: 51px 0 24px;
+    }
+
+    .subscribe_item {
+        padding: 24px;
+    }
+
+    .subscribe_subtitle {
+        font-size: 18px;
+        line-height: 145%;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .subscribe_button {
+        padding: 15px 22px;
+    }
+
+    .subscribe_btn_continue {
+        min-width: 120px;
+    }
+}
