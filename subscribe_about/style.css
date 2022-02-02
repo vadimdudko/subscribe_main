@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Gotham Pro", sans-serif;
+}
+
+.top_block {
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(16px);
+    height: 80px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.subscribe_container {
+    display: grid;
+    justify-content: center;
+}
+
+.subscribe_title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin-top: 52px;
+}
+.subscribe_subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #F06697;
+    margin-top: 58px;
+}
+
+label {
+    position: relative;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #F06697;
+    background-color: #F06697;
+    /*background-image: url("https://content.cool-gym.ru/images/quiz/el_ok_equ6xi.png");*/
+    background-image: url("./images/sub_check.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.custom-checkbox+label::before {
+    position: absolute;
+    top: 3px;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1.5px solid #DED6E7;
+    background-size: 50%;
+}
+
+.custom-checkbox-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    padding-left: 26px;
+    display: block;
+}
+
+.subscribe_info {
+    margin-top: 8px;
+}
+
+.subscribe_info_item {
+    margin-bottom: 16px;
+}
+
+.subscribe_info_item:last-child {
+    margin-bottom: 0px;
+}
+
+.subscribe_comment {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+    margin: 32px 0 16px;
+}
+
+.subscribe_textarea {
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+    max-width: 596px;
+    height: 100%;
+    min-height: 86px;
+    outline: 0;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #AFAFAF;
+    padding: 16px 0 0 16px;
+}
+
+.subscribe_btn {
+    margin: 24px 0 42px 0;
+    display: flex;
+}
+
+.subscribe_btn_continue {
+    background: #F2F2F2;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    padding: 15px 25px;
+    outline: 0;
+    border: none;
+    margin-right: 8px;
+    min-width: 160px;
+    cursor: pointer;
+}
+
+.subscribe_btn_continue:last-child {
+    margin-right: 0;
+}
+
+.active {
+    background: #F06697;
+    box-shadow: 0px 6px 22px rgba(240, 102, 151, 0.3);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .subscribe_info {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .subscribe_title {
+        font-size: 32px;
+        line-height: 28px;
+        margin-top: 33px;
+    }
+
+    .subscribe_subtitle {
+        text-align: left;
+        font-size: 16px;
+        line-height: 145%;
+        margin-top: 32px;
+    }
+
+    .custom-checkbox-text {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .subscribe_info {
+        margin-top: 24px;
+    }
+
+    .subscribe_comment {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .subscribe_textarea {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 345px) {
+    .subscribe_btn_continue {
+        min-width: 140px;
+    }
+}
